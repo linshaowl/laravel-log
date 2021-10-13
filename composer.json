@@ -1,0 +1,35 @@
+{
+    "name": "lswl/laravel-log",
+    "description": "Laravel log.",
+    "keywords": [
+        "lswl",
+        "laravel",
+        "log"
+    ],
+    "homepage": "https://linshaowl.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linshaowl",
+            "email": "linshaowl@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lswl\\Log\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "lswl/laravel-support": "^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lswl\\Log\\LswlServiceProvider"
+            ]
+        }
+    }
+}
