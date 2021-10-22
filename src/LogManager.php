@@ -238,7 +238,7 @@ class LogManager extends \Illuminate\Log\LogManager
     /**
      * {@inheritdoc}
      */
-    protected function get($name)
+    protected function get($name, ?array $config = null)
     {
         try {
             // 实例名称
